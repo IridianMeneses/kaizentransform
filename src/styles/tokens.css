@@ -1,0 +1,27 @@
+:root {
+  --bg:        #0A0A0A;
+  --surface:   #141414;
+  --border:    #262626;
+  --text:      #F5F5F5;
+  --muted:     #8A8A8A;
+  --red:       #D0171D;
+  --red-hi:    #FF2A31;
+  --gold:      #E8B04B;
+  --green:     #34C759;
+
+  --radius:    12px;
+  --font-display: 'Bebas Neue', 'Oswald', sans-serif;
+  --font-body:    system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 { font-family: var(--font-display); letter-spacing: .02em; }
+:focus-visible { outline: 2px solid var(--red-hi); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
